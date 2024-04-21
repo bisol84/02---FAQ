@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script lang="JavaScript" src="./script.js"></script>
+
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div class="box-title">
+          <img src="./assets/images/icon-star.svg" alt="icon" />
+          <h1>FAQs</h1>
+        </div>
+        <div class="questions">
+          <div class="question-title" onclick="toggleQuestion(1)">
+            <h2>What is Frontend Mentor, and how will it help me?</h2>
+            <img
+              id="icon1"
+              src="./assets/images/icon-minus.svg"
+              alt="icon-minus"
+            />
+          </div>
+          <p class="question-content answer1">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+        <div class="questions">
+          <div class="question-title" onclick="toggleQuestion(2)">
+            <h2>Can I use Frontend Mentor projects in my portfolio?</h2>
+            <img
+              id="icon2"
+              src="./assets/images/icon-plus.svg"
+              alt="icon-plus"
+            />
+          </div>
+          <p class="hide question-content answer2">No</p>
+        </div>
+        <div class="questions">
+          <div class="question-title" onclick="toggleQuestion(3)">
+            <h2>How can I get help if I'm stuck on a challenge?</h2>
+            <img
+              id="icon3"
+              src="./assets/images/icon-plus.svg"
+              alt="icon-plus"
+            />
+          </div>
+          <p class="hide question-content answer3">Google or ChatGPT</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
